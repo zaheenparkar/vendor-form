@@ -2,5 +2,5 @@
 
 export const environment = {
   production: true,
-  apiUrl: 'https://form.fashquick.com/api' // Change to your production API endpoint
+  apiUrl: 'vendor-form-gamma.vercel.app/api' // Change to your production API endpoint
 };
