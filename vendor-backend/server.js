@@ -34,15 +34,14 @@ const vendorSchema = new mongoose.Schema({
 const Vendor = mongoose.model("Vendor", vendorSchema);
 
 // Google Sheets setup
-const googleSheetsKey = JSON.parse(process.env.GOOGLE_SHEETS_KEY); // Read from env variables
 const auth = new google.auth.GoogleAuth({
-  credentials: googleSheetsKey,
+  keyFile: "./keys/vendor-onboarding.json", // Replace with your service account key file path
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
 const sheets = google.sheets({ version: "v4", auth });
 
-const spreadsheetId = process.env.SPREADSHEET_ID; // Read from env variables
+const spreadsheetId = "1jEEY49YzRMHibgRKKjsZVyjuk5POHFGtLt4N5PssDY0";
 
 app.post("/api/vendors", async (req, res) => {
   const vendorData = req.body;
