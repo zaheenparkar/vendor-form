@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vendor-onboarding-428515",
+  "private_key_id": "a1da2cab46b8ff79d6c51d54d950bd2cf8de1d3f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCn/twTzMUKcc5Y\nLBoBxmZZv6OSnxuEwRlyVo5RgqmWOWL6ydJ8rrrosuS14gL/UuTqQKCwRGwvaHzS\ngLwc5QyKxkzY1PbDwafmlDrX9fyUIJLmaW5CL+n7e4ciDVFUyDxyNh+1Ku3pZ0Um\naC4p/9VVmyDf+3eRVXOip4IGK9x2S69k1yuOSsCjKhbgSDPM2kc96jYyw1x7aAcB\npekQhdkQB7ZoWRtVG7KH2m2nNc8Nm/w2ZeCek7tZugkwzkgOvQD6vIzkfCFgxzH4\nmr4yoRN5GdyNtu04JPwg0r3N+Kjv/Aqebthnh3Kj8FY8Bz3LEXM0ZQpZm4PUX1Td\nHT3yn6l3AgMBAAECggEALErevX2sqc9NpyOhi7xCegEz4FGA0OSUj/fQOB9qFQh2\nV0bk7yimcPnRoT7AqY6yeiyl8TNpDqrO1jVI45lkUCZuVnD3yq8BVKLaTNw3Rtq7\nwHIltt+pIjv0af725ZKRlU891udFqNcofTLUkRA5sANhjIxhfvj3rvfZKUVhL/Lh\nE7gppHbM9bPTPm/5E0dQ2lu9AohPh+fvBSHL3VG/AW7rA6c8r64FSYwjL6TakBhI\nPobbqg7ZgjZ9k38PpCa4zaI4EoVVBg7Z9qO7PhmUxNlhiv3VUCYOaN9w4F7+BPUA\nNP4/gKTR5Jp+OvTKS6UCwrxH7CNG71XaOpQq08qHWQKBgQDW85QGtqMs0R4r12Fx\ns/Dn5wAP0GryZ07Mo8t/OHfyACnHd94a7eVrKrzqNOjbnBnVEoNhYVvatmrHE3fa\nn7s+6pvNiL2Q8WOH+X13ZlDr9GBbtxsdnDGZYAjcrA02tAPyIYl7eQUj6AU9netA\nAXAWrZo1gnqGAmGBUvixzW2MiwKBgQDIE7o2TQDC8RLh3Cekq27M5/7qgpCQmJaV\noVOTeWrlT6J8etce0iuza7todKBFbyAZBg8torpG0hj2QjCG5gugP5UKQWVpBQeK\nNauRaY3wCs3iQrpTpY+FFQDKPrz2s7G7zRYg/TON5tz+fa1yqXnMLmL2u36j6OKH\nCjfnz3tYRQKBgG83Zm62zuTgakD61rNTDCGg9vo3ty4m37GoSiFQIVd4WCWZ0rSS\nRHLXkRmJOLZwJTmGs62OB025trO8UfYvUV2zW9vTlWnKS9pN72n46YO8VKL/sar3\nZv5Znxw2dTvJloUQbycQreUvJo8EB3V9iPZi6ngnQ6fU0YhtWrn8dWMTAoGBAKb2\nX3Sk+be0OY+liqeOMB5qk33biww/aZpgUEBHGH9X3z6FvDMKLFHD21alzIFk5KI9\nPjlVDKHA/fey8JACNT17EcLHI/tpqQsbEpt8PGhOe9UO3jKjfIsQJeKgTEyLVAxm\nbssEwRrvxwfQlQeUigFrzEYd3OanlzIdwt19dW8JAoGAHr5Dh/nHv7g3eVcYyhKv\ntmJxe30BFug+S1BFeoXm65eaQF+oJDmLSBdKVjllIx02KrgcLfei6UsVMOG/wVI0\nzsqMyTPT5PJg9VEHKDiMaofKhSuCYefaM5j9RuJCsBkvFt7MxUQ0tgIW2IhFvgtJ\nOGtRfUsXBjzfg2l8r9zqOXI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account@vendor-onboarding-428515.iam.gserviceaccount.com",
+  "client_id": "100272867251832311363",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account%40vendor-onboarding-428515.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
