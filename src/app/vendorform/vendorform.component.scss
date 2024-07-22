@@ -1,0 +1,112 @@
+/* vendor-form.component.scss */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+form {
+  width: 100%;
+  max-width: 500px; // Restrict the width of the form to prevent screen stretching
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  width: 100%; // Make the button full width for consistency
+
+  &:hover {
+    background: #0056b3;
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .form-control {
+    height: 40px; // Adjust height for tablets
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    height: 36px; // Adjust height for mobile devices
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

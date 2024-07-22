@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="header">
+    <img src="assets/images/logo.png" alt="Company Logo" class="logo">
+    <h1 class="text-center">Vendor Onboarding</h1>
+  </div>
+  <form (ngSubmit)="onSubmit()" #vendorForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="vendor.name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="vendor.email" required pattern="abc@gmail.com">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="vendor.phone" required pattern="[0-9]{10}">
+    </div>
+    <div class="form-group">
+      <label for="firmname">Firm Name</label>
+      <input type="text" class="form-control" id="firmname" name="firmname" [(ngModel)]="vendor.firmname" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea class="form-control" id="address" name="address" [(ngModel)]="vendor.address"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation</label>
+      <input type="text" class="form-control" id="designation" name="designation" [(ngModel)]="vendor.designation">
+    </div>
+    <div class="form-group">
+      <label for="GSTNumber">GST Number</label>
+      <input type="text" class="form-control" id="GSTNumber" name="GSTNumber" [(ngModel)]="vendor.GSTNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="outlets">Outlets</label>
+      <input type="number" class="form-control" id="outlets" name="outlets" [(ngModel)]="vendor.outlets">
+    </div>
+    <div class="form-group">
+      <label for="onlinepresence">Online Presence</label>
+      <select class="form-control" id="onlinepresence" name="onlinepresence" [(ngModel)]="vendor.onlinepresence" required>
+        <option value="">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="vendor.onlinepresence === 'Yes'">
+      <label for="platforms">Platforms</label>
+      <input type="text" class="form-control" id="platforms" name="platforms" [(ngModel)]="vendor.platforms">
+    </div>
+    <div class="form-group">
+      <label for="feedback">Feedback</label>
+      <textarea class="form-control" id="feedback" name="feedback" [(ngModel)]="vendor.feedback"></textarea>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </div>
+  </form>
+</div>

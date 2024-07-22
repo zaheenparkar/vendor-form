@@ -1,0 +1,142 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-content{
+  flex-basis: 80%;
+}
+h2{
+  text-align: center;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 6.5rem;
+  height: auto;
+}
+
+.button-container {
+  flex-basis: 20%;
+  display: flex;
+  align-self: end;
+  justify-content: flex-end;
+}
+
+.table-container {
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+}
+
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    min-height: auto;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: center;
+
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+}
+
+/* Add this to vendor-list.component.scss */
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #0056b3;
+  }
+}

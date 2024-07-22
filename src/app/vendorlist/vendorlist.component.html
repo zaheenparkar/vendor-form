@@ -1,0 +1,62 @@
+<!-- vendor-list.component.html -->
+<div class="container">
+  <div class="header" style="position: relative;margin-bottom:8rem;">
+    <!-- <div class="header-content"> -->
+      <div class="logo-container" style="position: fixed;top
+      :2rem">
+        <img src="assets/images/logo.png" alt="Company Logo" />
+      </div>
+
+    <!-- </div> -->
+    <div class="button-container" style="position: fixed;top
+      :5rem ;right: 1rem;">
+      <a routerLink="/vendor-form" class="btn btn-primary">Add Vendor</a>
+    </div>
+
+  </div>
+  <h2 style="
+      position: fixed;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 24px;
+      z-index: 10;
+  ">Vendor List</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Firm Name</th>
+          <th>Address</th>
+          <th>Designation</th>
+          <th>GST Number</th>
+          <th>Number of Outlets</th>
+          <th>Online Presence</th>
+          <th>Platforms</th>
+          <th>Feedback</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vendor of vendors">
+          <td>{{ vendor.name }}</td>
+          <td>{{ vendor.email }}</td>
+          <td>{{ vendor.phone }}</td>
+          <td>{{ vendor.firmname }}</td>
+          <td>{{ vendor.address }}</td>
+          <td>{{ vendor.designation }}</td>
+          <td>{{ vendor.GSTNumber }}</td>
+          <td>{{ vendor.outlets }}</td>
+          <td>{{ vendor.onlinepresence }}</td>
+          <td>{{ vendor.platforms }}</td>
+          <td>{{ vendor.feedback }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
