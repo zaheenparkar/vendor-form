@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from '../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +12,10 @@ export class VendorService {
   private apiUrl = 'http://localhost:3000/api/vendors';
 
   constructor(private http: HttpClient) {}
+
+  submitForm(formData: any) {
+  return this.http.post(`${environment.apiUrl}`, formData);
+}
 
   // Save vendor data
   saveVendorData(vendor: any): Observable<any> {
